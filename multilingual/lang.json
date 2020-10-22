@@ -1,0 +1,42 @@
+{
+  "top": {
+      "ja": "トップ",
+      "en": "Top"
+  },
+  "about": {
+      "ja": "このサイトについて",
+      "en": "About This Site"
+  },
+	"profiles": {
+      "ja": "プロファイルス",
+      "en": "Profiles"
+  },
+	"projects": {
+      "ja": "プロジェクト",
+      "en": "Projects"
+  },
+	"skills": {
+      "ja": "スキル",
+      "en": "Skills"
+  },
+	"profile": {
+      "ja": "プロファイル",
+      "en": "Profile"
+  },
+	"contact": {
+      "ja": "コンタクト",
+      "en": "Contact"
+  },
+	"lang": {
+      "ja": "言語",
+      "en": "Lang"
+  },
+	"en": {
+      "ja": "英語",
+      "en": "English"
+  },
+	"jap": {
+      "ja": "日本語",
+      "en": "Japanese"
+  }
+}

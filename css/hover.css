@@ -1,0 +1,33 @@
+/******************************
+右回り right-roll
+******************************/
+.right-roll {
+  transition: all 1s linear 0s;
+  border-radius: 10%;
+  cursor: pointer;
+}
+.right-roll:hover {
+  transform: rotateZ(360deg);
+}
+
+/******************************
+拡大 zoom
+******************************/
+.zoom {
+  border-radius: 10%;
+  transition: all 0.6s ease 0s;
+}
+.zoom:hover {
+  cursor: pointer;
+  transform: scale(1.1, 1.1);
+  color: black;
+}
+
+/******************************
+変色 change color
+******************************/
+.change-color {
+}
+.change-color:hover {
+  background-color: black;
+}

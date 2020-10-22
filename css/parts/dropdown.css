@@ -1,0 +1,19 @@
+li.dropdown {
+    position: relative;
+}
+li.dropdown ul.dropdown-list {
+    position: absolute;
+    top: 35px;
+    width:100%;
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+}
+li.dropdown:hover ul.dropdown-list {
+    top: 50px;
+    visibility: visible;
+    opacity: 1;
+}
+ul.dropdown-list {
+  visibility: hidden;
+  left:-40px;
+}

@@ -1,0 +1,291 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>タイトル</title>
+  <!-- css -->
+  <link rel="stylesheet" media="(min-width: 640px)" href="css/style.css">
+  <link rel="stylesheet" media="(max-width: 640px)" href="css/style_mobile.css">
+  <link rel="stylesheet" type="text/css" href="css/hover.css">
+  <link rel="stylesheet" type="text/css" href="css/modal.css">
+  <link rel="stylesheet" type="text/css" href="css/treeConstraction.css">
+  <link rel="stylesheet" type="text/css" href="css/parts/dropdown.css">
+  <link rel="stylesheet" type="text/css" href="css/parts/section.css">
+
+  <!-- js -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+  <script type="text/javascript" src="js/common.js"></script>
+  <script type="text/javascript" src="js/plugin/scroll/scroll.js"></script>
+  <script type="text/javascript" src="js/plugin/modal/modal.js"></script>
+  <!-- js treeコンテナアニメーション -->
+  <script type="text/javascript" src="js/plugin/scrollreveal/scrollreveal.min.js"></script>
+  <script type="text/javascript">
+    $(function(){
+      //スクロール時のアニメーション設定
+      ScrollReveal().reveal('.leaf-circle', {
+        duration: 1600,
+        scale: 0.1,
+        reset: true
+      });
+      ScrollReveal().reveal('.leaf-card', {
+        duration: 1600,
+        origin: 'right',
+        distance: '50px',
+        reset: true
+      });
+    });
+  </script>
+</head>
+<body>
+  <!-- modal -->
+  <div id="modal-main">モーダルウィンドウ</div>
+
+  <div class="container-for-modal">
+    <!-- ヘッダーメニュー -->
+    <div class="header">
+      <div id="nav" class="nav-wrapper-container">
+        <ul>
+          <li>
+            <a href="#" glot-model="top"></a>
+          </li>
+          <li>
+            <a href="#about-this-site">About This Site</a>
+          </li>
+          <li class="dropdown">
+            <a href="#about-me">Profiles</a>
+            <ul class="dropdown-list">
+              <li>
+                <a href="#projects">Projects</a>
+              </li>
+              <li>
+                <a href="#skills">Skills</a>
+              </li>
+              <li>
+                <a  href="#profile">Profile</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+          <li class="dropdown">
+            <a　href="">Lang</a>
+            <ul class="dropdown-list">
+              <li>
+                <a href="">English</a>
+              </li>
+              <li>
+                <a href="">Japanese</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ヘッダーメニュー -->
+    <div id="top-banner-container" class="">
+      <div class="container">
+        <h2>SC Lab</h2>
+        <h3>SakoChan Laboratory</h3>
+      </div>
+    </div>
+
+    <!-- このサイトについて -->
+    <div id="about-this-site" class="section">
+      <div class="container">
+        <h2>About this site</h2>
+        <p>ここはエンジニアSakoのポートフォリオサイトです。これまでに手がけた制作物、
+          身につけたスキルをまとめています。あなたに、私のことをもっと深く知ってほしいと思って作りました。
+          どうぞお茶でも飲みながらごゆるりとサイト内を散策してください。</p>
+      </div>
+    </div>
+
+    <!-- About me -->
+    <div id="about-me" class="section">
+      <div class="container">
+        <h2>About me</h2>
+        <p>大分県出身のエンジニア。大学で経済学を学んでいたがアルバイト先の某運送会社の荷物のトラッキングシステムを調べ
+          エンジニアという仕事に興味を持つ。22歳からエンジニアとしてのキャリアをスタートし、Windowsネイティブアプリの開発、
+          WEBシステムの開発、システムの設計、開発、導入まで行ってきました。</p>
+      </div>
+    </div>
+
+    <!-- プロジェクト -->
+    <div id="projects" class="section">
+      <div class="container">
+        <h2>Projects</h2>
+        <p>これまで参画してきたプロジェクト、また作成してきた作品です。</p>
+      </div>
+      <div class="container-proj">
+        <div class="item zoom change-color" name="item">
+        </div>
+        <div class="item zoom change-color" name="item">
+        </div>
+        <div class="item zoom change-color" name="item">
+        </div>
+        <div class="item zoom change-color" name="item">
+        </div>
+        <div class="item zoom change-color" name="item">
+        </div>
+        <div class="item zoom change-color" name="item">
+        </div>
+        <div class="item zoom change-color" name="item">
+        </div>
+        <div class="item zoom change-color" name="item">
+        </div>
+        <div class="item zoom change-color" name="item">
+        </div>
+        <div class="item zoom change-color" name="item">
+        </div>
+      </div>
+    </div>
+
+    <!-- スキル -->
+    <div id="skills" class="section">
+      <div class="container">
+        <h2>Skills</h2>
+        <p>これまで、業務、個人含め培ってきた経験をグラフにまとめてみました。現状では広く浅くで一つの技術や言語に対する習熟度が深くないといった課題があります。この習熟度の浅さは個人学習でも補填していこうと考えています。
+          今まではほとんどプログラマーとしてプロジェクトに参画してきたので、技術の習熟度を上げ、対話能力の質も向上させリーダーの経験を積めていけるよう精進していければと思います。</p>
+        <div class="graph-container">
+          <div class="chart-box">
+            <canvas id="myChart1" class="myChart"></canvas>
+            <div class="level-box">
+              <p>5:「神」....まるで呼吸をするかのごとく自由に使える</p>
+              <p>4:「竜」....業務で使えるだけでなく、仕組みを理解し、他人にも説明できる</p>
+              <p>3:「鬼」....業務で自由に使える</p>
+              <p>2:「虎」....利用可</p>
+              <p>1:「狼」....初心者レベル</p>
+            </div>
+          </div>
+          <div class="chart-box">
+            <canvas id="myChart2" class="myChart"></canvas>
+            <div class="level-box">
+              <p>5:「神」....まるで呼吸をするかのごとく自由に使える</p>
+              <p>4:「竜」....業務で使えるだけでなく、仕組みを理解し、他人にも説明できる</p>
+              <p>3:「鬼」....業務で自由に使える</p>
+              <p>2:「虎」....利用可</p>
+              <p>1:「狼」....初心者レベル</p>
+            </div>
+          </div>
+          <div class="chart-box">
+            <canvas id="myChart3" class="myChart"></canvas>
+            <div class="level-box">
+              <p>5:「神」....まるで呼吸をするかのごとく自由に使える</p>
+              <p>4:「竜」....業務で使えるだけでなく、仕組みを理解し、他人にも説明できる</p>
+              <p>3:「鬼」....業務で自由に使える</p>
+              <p>2:「虎」....利用可</p>
+              <p>1:「狼」....初心者レベル</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- プロファイル -->
+    <div id="profile" class="section">
+      <div class="container">
+        <h2 class="title">Profile</h2>
+        <p class="title">せっかくなので、これまでの人生の軌跡をたどってみましょう！</p>
+        <div class="tree-container">
+          <div class="leaf-row">
+            <h2>1993~</h2>
+            <div class="leaf-circle leaf-medium" style="background-image: url(Images/oita_onsen.jpg)">
+            </div>
+            <div class="leaf-card">
+              <h3>温泉の国、大分県で生まる。</h3>
+              <p>温泉がたくさんあるとはいえ、さほど温泉を利用していたわけではありませんでした...</p>
+            </div>
+          </div>
+          <div class="leaf-row">
+            <h2>2000~</h2>
+            <div class="leaf-circle leaf-medium" style="background-image: url(Images/usa.jpg)">
+            </div>
+            <div class="leaf-card">
+              <h3>全校生徒19人の小学校に入学</h3>
+              <p>入学人数は1人、僕だけであった....</p>
+            </div>
+          </div>
+          <div class="leaf-row">
+            <h2>2012~</h2>
+            <div class="leaf-circle leaf-medium" style="background-image: url(Images/onomichi.jpg)">
+            </div>
+            <div class="leaf-card">
+              <h3>尾道の某市立大学に入学</h3>
+              <p>受験勉強を乗り越え、何とか国公立大学に入学！</p>
+            </div>
+            <div class="leaf-card">
+              <h3>某運送会社のアルバイトを経験！</h3>
+              <p>荷物の仕分け人として働いていた、そのなかで荷物の位置をどうやって特定しているのだろうと疑問に思い宅配物の追跡システムに関して個人的に調べる。そしてそういったシステムを開発するSEという職業に興味を持つ。</p>
+            </div>
+          </div>
+          <div class="leaf-row">
+            <h2>2016~</h2>
+            <div class="leaf-circle leaf-medium" style="background-image: url(Images/oita_city.jpg)">
+            </div>
+            <div class="leaf-card">
+              <h3>大分のシステム開発会社に入社！ 晴れてシステム開発の世界へ！</h3>
+              <p></p>
+            </div>
+            <div class="leaf-card">
+              <h3>神奈川での出張経験！</h3>
+              <p>漠然と関東でエンジニアとして働くことにあこがれを抱いていた。しかしこの出張経験で東京に出てエンジニアとして働きたいと決心する！</p>
+            </div>
+          </div>
+          <div class="leaf-row">
+            <h2>2019~</h2>
+            <div class="leaf-circle leaf-medium" style="background-image: url(Images/tokyo.jpg)">
+            </div>
+            <div class="leaf-card">
+              <h3>転職し東京のシステム開発会社に入社！</h3>
+              <p>自分を拾ってくれる会社をみつけ運がよかった！</p>
+            </div>
+          </div>
+          <div class="leaf-row">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 連絡先 -->
+    <div id="contact" class="section">
+      <div class="container">
+        <div class="row">
+          <h2 class="center grey-text text-darken-3">Contact me</h2>
+        </div>
+        <div class="row">
+          <div class="">
+            <p class="comment-text grey-text text-darken-3">最後までご覧いただきありがとうございました。このサイトを通して、私のことを少しでも知っていただけたのなら嬉しいです。もしこのサイトや私について何かコメントがありましたら、下記フォームをご利用ください。</p>
+          </div>
+        </div>
+        <div class="row">
+          <input id="name" name="name" type="text" required="" placeholder="Name">
+          <input id="email" name="email" type="email" required="" placeholder="E-mail">
+        </div>
+        <div class="row">
+          <textarea id="textarea" name="message" class="materialize-textarea" required="" placeholder="Comment"></textarea>
+        </div>
+        <div class="row">
+          <button id="send" type="submit" class="waves-effect waves-light btn led-color-of-btn">Send</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- フッダー -->
+    <footer>
+    </footer>
+  </div>
+  <!-- js 多言語対応 -->
+  <script src="https://unpkg.com/glottologist"></script>
+  <script type="text/javascript">
+    $(function(){
+      //JSONファイルを読み込む
+      const glot = new Glottologist();
+      glot.import("multilingal/lang.json").then(() => {
+          glot.render('en');
+      })
+    });
+  </script>
+</body>
+</html>

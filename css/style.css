@@ -1,0 +1,224 @@
+/*#################################
+body
+#################################*/
+html, body {
+  height: 100%;
+}
+body{
+  background-image: url("../images/backGroundImg9.jpg");
+  background-repeat: repeat;
+  background-attachment: fixed;
+  margin: 0;
+}
+
+/*#################################
+ヘッダー
+#################################*/
+.header{
+  position: fixed;
+  display: flex;
+  height:64px;
+  width:100%;
+  background-color: white;
+}
+
+/*#################################
+ナビゲーションバー
+#################################*/
+#nav ul{
+  margin-block-start:0;
+  margin-block-end:0;
+  padding-inline-start:0;
+}
+#nav ul ul{
+  top:64px;
+  padding-inline-start:40px;
+}
+#nav li{
+  list-style: none;
+  float: left;
+  border-radius: 2px 2px 2px 2px;
+  width:25vh;
+  height: 64px;
+  line-height: 64px;
+  text-align: center;
+}
+#nav li a{
+  text-decoration: none;
+}
+.nav-wrapper-container{
+  margin: auto;
+}
+ul li.current{
+background-color: #DEEBF7;
+}
+ul li.current a{
+color: #555;
+}
+ul li:hover{
+background-color: #FFF2CC;
+}
+
+/*#################################
+トップバナー
+#################################*/
+#top-banner-container{
+  padding-top: 200px;
+  height: calc(100vh - 200px);
+  background-color: white;
+  box-shadow: 0 0 2px gray;
+  border-radius: 2px 2px 2px 2px;
+}
+#top-banner-container .container{
+  width:40%;
+  margin:auto;
+}
+#top-banner-container h2,
+#top-banner-container h3{
+  text-align: center;
+}
+
+/*################################
+このサイトについて
+#################################*/
+#about-this-site{
+}
+#about-this-site .container{
+  width:40%;
+  margin:auto;
+  padding-top: 15%;
+}
+#about-this-site h2{
+  text-align: center;
+}
+#about-this-site p{
+  text-align: left;
+}
+
+/*#################################
+私について
+#################################*/
+#about-me{
+  background-color: white;
+  box-shadow: 0 0 2px gray;
+  border-radius: 2px 2px 2px 2px;
+}
+#about-me .container{
+  width:40%;
+  margin:auto;
+  padding-top: 15%;
+}
+#about-me h2{
+  text-align: center;
+}
+#about-me p{
+  text-align: left;
+}
+
+
+/*#################################
+プロジェクト
+#################################*/
+#projects h2{
+  text-align: center;
+}
+#projects p{
+  text-align: center;
+}
+
+#projects .container-proj{
+  display:grid;
+  grid-template-columns: repeat(5, 1fr);
+  width:80%;
+  margin: auto;
+}
+
+#projects .item{
+  width:30vh;
+  height: 30vh;
+  background-color:white;
+  border-color: black;
+  margin-top: 15px;
+}
+
+/*#################################
+スキル
+#################################*/
+#skills{
+  background-color: white;
+  box-shadow: 0 0 2px gray;
+  border-radius: 2px 2px 2px 2px;
+}
+#skills .container{
+  width:70%;
+  margin:auto;
+  padding-top: 15%;
+  margin-bottom: 20px;
+}
+#skills h2{
+  text-align: center;
+}
+#skills p{
+  text-align: center;
+}
+#skills .graph-container{
+  display: flex;
+}
+#skills .chart-box{
+  margin: auto;
+  width: 33%;
+}
+#skills .level-box{
+  border-style:ridge;
+}
+#skills .level-box p{
+  text-align: left;
+  padding-left: 10px;
+  font-size: 10px;
+}
+#skills canvas{
+  width: 99%;
+}
+
+/*#################################
+プロファイル
+#################################*/
+#profile{
+  height: 2750px;
+}
+#profile .container{
+  width: 70%;
+  margin:auto;
+}
+#profile .title{
+  text-align: center;
+}
+
+/*#################################
+連絡先
+#################################*/
+#contact{
+  background-color: white;
+  box-shadow: 0 0 2px gray;
+  border-radius: 2px 2px 2px 2px;
+}
+#contact h2{
+  text-align: center;
+}
+#contact .container{
+  padding: 10%;
+  width:40%;
+  margin:auto;
+}
+#contact .container.row{
+  display:inline-block;
+  padding-top: 2px;
+}
+#contact #name,
+#contact #email{
+  width:49%;
+}
+#contact #textarea,
+#contact #send{
+  width:99%;
+}
